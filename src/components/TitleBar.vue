@@ -1,8 +1,8 @@
 <template>
   <header class="titlebar">
     <div class="titlebar-left drag-area">
-      <img src="/src/assets/logo.webp" alt="logo" class="titlebar-logo" />
-      <span class="titlebar-title">EasyDesktopApp</span>
+      <img src="/src/assets/titleLogo.svg" alt="logo" class="titlebar-logo" />
+      <span class="titlebar-title">冰箱外观检测系统</span>
     </div>
     <div class="titlebar-right no-drag">
       <button class="tb-btn" @click="minimize">_</button>
@@ -59,17 +59,19 @@ async function close() {
 .titlebar{
   height: 36px;
   display:flex;
+  flex-direction: row;
   align-items:center;
-  justify-content:space-between;
+  justify-content:start;
   padding: 0 8px;
-  background: linear-gradient(90deg,#2B63D1,#1E3EA4);
-  color: #fff;
+  background:  white ; 
+  color: #2c2c2c;
   -webkit-user-select: none;
+  border-bottom: 1px solid #e6e6e6;
 }
-.drag-area{ -webkit-app-region: drag; display:flex; align-items:center; gap:8px }
+.drag-area{ -webkit-app-region: drag; display:flex; flex:1; align-items:center; gap:8px }
 .no-drag{ -webkit-app-region: no-drag; display:flex; gap:6px }
 .titlebar-logo{ width:20px; height:20px }
-.titlebar-title{ font-weight:600; font-family: "Microsoft YaHei", sans-serif }
-.tb-btn{ background: transparent; border: none; color: #e6f0ff; width:36px; height:28px; cursor:pointer }
-.tb-btn.close{ color: #ff6b6b }
+.titlebar-title{ font-weight:400; font-family: "Microsoft YaHei", sans-serif }
+.tb-btn{ font-weight: bold; background: transparent; border: none; color: #050505; width:36px; height:28px; cursor:pointer }
+.tb-btn.close{ font-weight: bold; color: #000000 }
 </style>

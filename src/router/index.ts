@@ -10,7 +10,7 @@ const routes = [
 		path: "/detection",
 		name: "Detection",
     meta: { title: '实时外观检测' },
-		component: () => import("../views/Detection.vue"),
+		component: () => import("../modules/detection/Detection.vue"),
 	},
 	{
 		path: "/statistics",

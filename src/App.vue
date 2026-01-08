@@ -22,7 +22,10 @@ import Layout from "./components/Layout.vue";
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

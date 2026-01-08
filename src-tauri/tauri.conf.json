@@ -12,12 +12,16 @@
   "app": {
     "windows": [
       {
-        "title": "easydesktopapp",
-        "width": 800,
-        "height": 600,
-        "decorations": false
+        "title": "冰箱外观检测系统",
+        "width": 1600,
+        "height": 900,
+        "decorations": false,
+        "transparent": false,
+        "resizable":  true,
+        "minimizable": true,
+        "maximizable": true
       }
-    ],
+    ], 
     "security": {
       "csp": null
     }

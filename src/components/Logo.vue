@@ -8,6 +8,6 @@
 </script>
 
 <style scoped>
-.logo { display:flex; align-items:start;justify-content: center; gap:12px; margin-top: 5px;  }
-.logo-img { width:calc(100% - 10px); height:auto; object-fit:contain }
+.logo { display:flex; align-items:start;justify-content: center;  height: 80px; background-color: white; }
+.logo-img { width: 100%; height:auto; object-fit:contain }
 </style>
