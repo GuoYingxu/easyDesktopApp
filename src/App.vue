@@ -25,6 +25,7 @@ import Layout from "./components/Layout.vue";
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {

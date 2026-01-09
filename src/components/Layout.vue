@@ -1,22 +1,22 @@
 <template>
   <div class="app-layout">
-    <div class="header">
+    <div class="flex-none h-37px ">
       <TitleBar />
     </div>
-    <div class="flex flex-row flex-1">
+    <div class="flex flex-row flex-1 max-h-full overflow-hidden">
       <aside class="sidebar">
         <Logo />
         <AppMenu />
-    </aside>
+      </aside>
 
-    <div class="main-area">
-      <header class="topbar">
-        <Header></Header>
-      </header>
-      <main class="content">
-        <router-view />
-      </main>
-    </div>
+      <div class="flex flex-col overflow-hidden flex-1">
+        <header class="topbar">
+          <Header></Header>
+        </header>
+        <main class="content">
+          <router-view />
+        </main>
+      </div>
   </div>
 </div>
 </template>
@@ -32,11 +32,11 @@ import TitleBar from "./TitleBar.vue";
 </script>
 
 <style scoped>
-.app-layout { display: flex; flex-direction: column; height: 100vh; }
+.app-layout { display: flex; flex-direction: column; height: 100vh;overflow: hidden; }
 .sidebar { width: 100px; background: #f7f7f7; color: #000000; display:flex; flex-direction:column; padding: 0; box-sizing: border-box }
-.main-area { flex: 1; display:flex; flex-direction:column; }
-.topbar { height: 80px; display:flex; align-items:center; justify-content:space-between; padding: 0 16px; border-bottom:1px solid #e6e6e6; background: #fff }
-.content { padding: 16px; overflow:auto; height: 100%; }
+.main-area { flex: 0; display:flex; flex-direction:column; max-height:100%;overflow: hidden; }
+.topbar { flex:none; height: 80px; display:flex; align-items:center; justify-content:space-between; padding: 0 16px; border-bottom:1px solid #e6e6e6; background: #fff }
+.content { padding: 16px; overflow:hidden; flex:1;max-height: 100%; display:flex; flex-direction:column; }
 .status { display:flex; align-items:center; gap:12px }
 .auth { display:flex; align-items:center }
 /* Page title font */

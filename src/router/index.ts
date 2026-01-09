@@ -16,19 +16,19 @@ const routes = [
 		path: "/statistics",
 		name: "Statistics",
     meta: { title: '数据统计' },
-		component: () => import("../views/Statistics.vue"),
+		component: () => import("../modules/statistics/History.vue"),
 	},
 	{
 		path: "/config",
 		name: "Config",
     meta: { title: '检测配置' },
-		component: () => import("../views/Config.vue"),
+		component: () => import("../modules/detecConfig/Config.vue"),
 	},
 	{
 		path: "/history",
 		name: "History",
     meta: { title: '历史数据' },
-		component: () => import("../views/History.vue"),
+		component: () => import("../modules/statistics/History.vue"),
 	},
 	{
 		path: "/alerts",
@@ -40,7 +40,7 @@ const routes = [
 		path: "/settings",
 		name: "Settings",
     meta: { title: '系统设置' },
-		component: () => import("../views/Settings.vue"),
+		component: () => import("../modules/settings/Settings.vue"),
 	},
 ];
 
