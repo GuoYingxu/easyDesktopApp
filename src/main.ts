@@ -3,10 +3,12 @@ import App from "./App.vue";
 import router from "./router";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
+// Element Plus Chinese locale
+import zhCn from 'element-plus/es/locale/lang/zh-cn'
 // UnoCSS generated styles
 import 'virtual:uno.css'
 
 const app = createApp(App);
 app.use(router);
-app.use(ElementPlus);
+app.use(ElementPlus, { locale: zhCn });
 app.mount("#app");

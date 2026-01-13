@@ -1,6 +1,8 @@
 // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-mod tray;
+use log;
+mod logging;
 mod menu;
+mod tray;
 #[tauri::command]
 fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
@@ -8,11 +10,18 @@ fn greet(name: &str) -> String {
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
+    //   let daily_plugin = make_daily_plugin::<tauri::Wry>(7, true); // keep last 7 days, use UTC
     tauri::Builder::default()
         .setup(|app| {
-            tray::create_tray(app)?;
-            menu::create_menu(app)?;
-            // TrayIconBuilder::new().icon(app.default_window_icon().unwrap().clone()).build(app)?;
+            // 初始化日志
+            // let _app_handle = logging::normal_log::init_logger(app);
+            // // 测试
+            // log::info!("Application started");
+            // log::debug!("Debug message");
+            // log::warn!("Warning message");
+            // Try to load JSON config next to executable, otherwise use default
+            // tray::create_tray(app)?;
+            // menu::create_menu(app)?;
             Ok(())
         })
         .plugin(tauri_plugin_opener::init())

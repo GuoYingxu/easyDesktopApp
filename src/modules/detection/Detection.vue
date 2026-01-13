@@ -103,7 +103,7 @@
         </div>
         
       </div>
-      <div class="flex-1  bg-white border-solid border-2px border-#0486FE rounded-8px p-16px">
+      <div class="flex-1  bg-white border-solid border-2px border-#0486FE rounded-8px p-16px overflow-hidden">
         <div class="flex flex-row  justify-between">
           <div class="font-bold"> 检测记录</div>
           <el-button > 查看详情   </el-button>

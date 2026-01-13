@@ -1,0 +1,9 @@
+{
+  "level": "INFO",
+  "file": "easydesktopapp.log",
+  "dir": "logs",
+  "to_console": true,
+  "rotate": "size",
+  "rotate_size": 10485760,
+  "rotate_keep": 7
+}
