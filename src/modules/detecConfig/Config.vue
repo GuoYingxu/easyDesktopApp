@@ -59,7 +59,7 @@
               </el-table-column>
               <el-table-column prop="description" label="报警设置" />
               <el-table-column label="操作" width="160">
-                <template #default="{ row, $index }">
+                <template #default="{ $index }">
                   <el-button size="small" @click="editRule($index)">编辑</el-button>
                   <el-button size="small" type="danger" @click="deleteRule($index)">删除</el-button>
                 </template>

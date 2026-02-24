@@ -14,37 +14,37 @@ const routes = [
 		path: "/detection",
 		name: "Detection",
     meta: { title: '实时外观检测' },
-		component: () => Detection
+		component:  Detection
 	},
 	{
 		path: "/statistics",
 		name: "Statistics",
     meta: { title: '数据统计' },
-		component: () => History,
+		component: History,
 	},
 	{
 		path: "/config",
 		name: "Config",
     meta: { title: '检测配置' },
-		component: () => Config
+		component:  Config
 	},
 	{
 		path: "/history",
 		name: "History",
     meta: { title: '历史数据' },
-		component: () => History
+		component:History
 	},
 	{
 		path: "/alerts",
 		name: "Alerts",
     meta: { title: '产品信息' },
-		component: () => Production
+		component: Production
 	},
 	{
 		path: "/settings",
 		name: "Settings",
     meta: { title: '系统设置' },
-		component: () => Settings
+		component:  Settings
 	},
 ];
 

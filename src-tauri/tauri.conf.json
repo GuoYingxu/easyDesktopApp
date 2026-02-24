@@ -19,7 +19,8 @@
         "transparent": false,
         "resizable":  true,
         "minimizable": true,
-        "maximizable": true
+        "maximizable": true,
+        "devtools": true
       }
     ], 
     "security": {

@@ -21,7 +21,7 @@ impl Default for LogConfig {
     fn default() -> Self {
         Self {
             max_file_size: Some(10 * 1024 * 1024), // 10 MB 默认
-            keep_files: 10,                        // 保留最近 5 个归档
+            keep_files: 10,                        // 保留最近 10 个归档
             level: "Info".into(),
             to_stdout: true,
         }
@@ -38,6 +38,7 @@ impl LogConfig {
         base.push(env!("CARGO_PKG_NAME"));
         // 创建目录（调用方可保证目录存在或在 save 中创建）
         base.push("log_config.json");
+        println!("log config path: {}", base.display());
         base
     }
 

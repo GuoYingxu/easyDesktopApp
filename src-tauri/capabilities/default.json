@@ -3,7 +3,8 @@
   "identifier": "default",
   "description": "Capability for the main window",
   "windows": [
-    "main"
+    "main",
+    "process:default"
   ],
   "permissions": [
     "core:default",
@@ -12,6 +13,11 @@
     "core:window:allow-minimize",
     "core:window:allow-close",
     "core:window:allow-unmaximize",
-    "log:default"
+    "log:default",
+    "process:allow-restart",
+    "process:allow-exit"
+  ],
+  "webviews": [
+    "devtools:allow"
   ]
 }

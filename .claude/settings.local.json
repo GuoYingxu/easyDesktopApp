@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo check:*)",
+      "Bash(tasklist | grep -i cargo 2>&1; tasklist | grep -i rustc 2>&1)",
+      "Bash(taskkill:*)",
+      "Bash(cmd:*)",
+      "Bash(tail:*)",
+      "Bash(cd /e/rustprojects/easyDesktopApp && npx vue-tsc --noEmit 2>&1)",
+      "WebFetch(domain:www.nlscan.com)",
+      "WebSearch"
+    ]
+  }
+}

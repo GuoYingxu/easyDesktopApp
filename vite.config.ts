@@ -8,7 +8,10 @@ const host = process.env.TAURI_DEV_HOST;
 // https://vite.dev/config/
 export default defineConfig(async () => ({
   plugins: [vue(), Unocss()],
-
+  build: {
+    minify: false, // 关闭压缩，方便定位源码
+    sourcemap: true // 生成sourcemap，可直接映射到源码
+  },
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //
   // 1. prevent Vite from obscuring rust errors
